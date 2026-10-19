@@ -23,6 +23,7 @@ public class GaussSeidel {
 
         // Ciclo principal de iteraciones (controla el límite de vueltas para evitar loops infinitos)
         for (int iter = 0; iter < maxIter; iter++) {
+            // System.out.printf("Iter: %d\n", iter+1);
             
             // Respaldamos el estado anterior para poder calcular el error al final de la vuelta
             double[] xAnt = x.clone();

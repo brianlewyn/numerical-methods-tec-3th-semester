@@ -20,6 +20,8 @@ public class Jacobi {
 
         // Ciclo principal de iteraciones
         for (int k=0; k<maxIter; k++) {
+            // System.out.printf("Iter: %d\n", k+1);
+
             // Su función es repetir el cálculo una y otra vez
             // para ir afinando la respuesta con un límite máximo
 

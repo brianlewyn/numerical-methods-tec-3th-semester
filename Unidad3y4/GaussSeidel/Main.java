@@ -13,17 +13,17 @@ public class Main {
         double[] xInicial = new double[b.length];
 
         // Tolerancia y número máximo de iteraciones
-        double tol = 1e-5;
+        double tol = 1e-4;
         int maxIter = 100;
 
         // Llamada al método de Gauss-Seidel
         double[] resultado = GaussSeidel.resolver(A, b, xInicial, tol, maxIter);
 
         // Imprimir los resultados por consola
-        System.out.println("Solución final obtenida por Gauss-Seidel (matriz reciclada de Jacobi):");
-        
-        for (int i = 0; i < resultado.length; i++) {
-            System.out.println("x[" + i + "] = " + resultado[i]);
+        System.out.print("Solución aproximada: [");
+        for (double val : resultado) {
+            System.out.printf("%.5f ", val);
         }
+        System.out.println("]");
     }
 }

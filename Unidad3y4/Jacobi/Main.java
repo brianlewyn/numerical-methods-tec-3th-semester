@@ -8,7 +8,7 @@ public class Main {
         double[] x0 = DefMatriz.obtenerVectorX0();
 
         // Parámetros de tolerancia y límite de iteraciones
-        double tol = 1e-5;
+        double tol = 1e-4;
         int maxIter = 100;
 
         // Llamada al método resolver
